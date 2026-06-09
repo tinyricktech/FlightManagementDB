@@ -36,7 +36,7 @@ class DBOperations:
             FOREIGN KEY (DestinationID) REFERENCES Destinations(DestinationID)
         )"""
 
-    def __init__(self):
+    def _init_(self):
         try:
             self.conn = sqlite3.connect("FlightManagement.db")
             self.cur = self.conn.cursor()
